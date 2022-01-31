@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="style/explore.css">
+</head>
+<body>
+   <div class="header">
+       <img src="img/gaga.jpg" alt="">
+       <div class="nav">
+           <ul>
+               <li><a href="Portfolio">PORTFOLIO</a></li>
+               <li><a href="Contact me">CONTACT ME</a></li>
+               <li><a href="Resume">RESUME</a></li>
+           </ul>
+           <img src="img/light.png" alt="" id="lightmode">
+       </div>
+       <div class="Bam">
+           <ul>
+               <li class="Bam1"><a href="Projects">Projects</a></li>
+               <li class="Bam2"><a href="Blog">Blog</a></li>
+               <li class="Bam3"><a href="My Notes">My Notes</a></li>
+           </ul>
+       </div>
+       <a href="project.html"><img src="img/cross.png" alt=""></a>
+   </div>
+   <script>
+        var lightmode = document.getElementById("lightmode");
+
+        lightmode.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+               icon.src = "img/dark.png";
+            }
+            else{
+                icon.src = "img/light.png";
+            }
+        }
+    </script> 
+</body>
+</html>
